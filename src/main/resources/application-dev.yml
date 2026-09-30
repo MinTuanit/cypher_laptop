@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    user:
+      jdbc-url: jdbc:postgresql://localhost:5434/my_postgres_db
+      username: admin
+      password: password123
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+server:
+  port: 9090
+jwt:
+  secret: "uh7poYON6lu6B8q7QKEuL9j3g1lbpraQPlx4mmded7k="
+  expiration: 3600000   # 1 giờ

@@ -1,4 +1,4 @@
-package com.example.cypher_laptop.entity;
+package com.example.cypher_laptop.entity.user;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,17 +10,17 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
+public class UserTest {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String name;
-    private String username;
-    private String password;
-    @Column(length = 10)
-    private String phonenumber;
-    @Column(name = "address", length = 100)
+    @Column(name = "address", length = 30)
     private String address;
+    @Column(name = "phone", length = 10)
+    private String phone;
     @Column(unique = true)
     private String email;
+    private String username;
+    private String password;
 }
