@@ -59,6 +59,15 @@ dependencies {
 
     // JJWT Jackson integration (Runtime only for JSON processing)
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // BouncyCastle
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.70'
+
+    // MinIO
+    implementation 'io.minio:minio:8.5.7'
+
+    //Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 }
 
 tasks.named('test') {

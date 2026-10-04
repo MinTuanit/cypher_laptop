@@ -5,7 +5,6 @@ import com.example.cypher_laptop.common.BaseController;
 import com.example.cypher_laptop.security.jwt.JwtService;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
